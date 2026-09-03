@@ -50,3 +50,7 @@ Application Traffic
 | Cloud Armor / WAF | Edge security and traffic protection |
 | Cloud Storage | Object/file storage |
 | Cloud Monitoring & Logging | Operational visibility and troubleshooting |
+
+## System Architecture
+
+![ALT Balaji / Kutingg.com System Architecture](./architecture.png)
