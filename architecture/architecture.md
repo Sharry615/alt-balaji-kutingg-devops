@@ -1,56 +1,5 @@
-# Architecture
+# ALT Balaji / Kutingg.com System Architecture
 
-## Platform Flow
+![ALT Balaji / Kutingg.com System Architecture](alt-balaji-kutingg-system-architecture.png)
 
-```text
-Internet
-   |
-   v
-Load Balancer
-   |
-   v
-Cloud Armor / WAF
-   |
-   v
-Cloud Run Services
-   |              |
-   v              v
-Cloud SQL      Cloud Storage
-   |
-   v
-PostgreSQL
-```
-
-## Container Deployment Flow
-
-```text
-Source Code
-    |
-    v
-Docker Build
-    |
-    v
-Artifact Registry
-    |
-    v
-Cloud Run Revision
-    |
-    v
-Application Traffic
-```
-
-## Infrastructure Components
-
-| Component | Purpose |
-|---|---|
-| Cloud Run | Application execution for containerized services |
-| Artifact Registry | Container image storage |
-| Cloud SQL / PostgreSQL | Managed relational database |
-| Load Balancer | Application traffic distribution and ingress |
-| Cloud Armor / WAF | Edge security and traffic protection |
-| Cloud Storage | Object/file storage |
-| Cloud Monitoring & Logging | Operational visibility and troubleshooting |
-
-## System Architecture
-
-![ALT Balaji / Kutingg.com System Architecture](./architecture.png)
+The architecture reflects the supplied portfolio reference: Cloud DNS, HTTPS Load Balancer and Cloud Armor, Cloud Run application services, Cloud SQL primary/read replica, Memorystore Redis, Kafka, BigQuery, Cloud Storage, GitHub/Cloud Build/Artifact Registry CI/CD, and the common Grafana/Zabbix/Telegram monitoring model.
